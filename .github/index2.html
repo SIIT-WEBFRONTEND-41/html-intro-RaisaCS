@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!--As fi vrut sa fac imaginea opaca, dar nu am reusit aici in html :()-->
+    <fieldset style="background-image:url(travel.jpg); background-size: 1500px;">
+    <legend>Vacation Travel</legend>
+    <h1><b>Thank you for taking your time to take our survey!</b></h1>
+<form>
+     
+    <div style="margin-bottom: 15px;">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+    </div>
+   
+    <div style="margin-bottom: 15px;">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" requiredautofocus name="email" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" />
+    </div>
+   
+    <div style="margin-bottom: 15px;">
+        <label>Age</label>
+        <input type="number" min="1" max="100" name="age" placeholder="Age" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <label><b>Where is your favorite vacation destination?</b></label>
+        <br><br>
+        <select type="dropdown">
+        <option value="">Select destination</option>
+        <option value="1">Seaside</option>
+        <option value="2">Mountain</option>
+        </select>
+    </div>
+
+<fieldset style="margin-bottom: 15px;">
+        <legend><b>How often do you use a travel agent when making vacation plans?</b></legend>
+
+    <div>
+        <input type="radio" value="Always" name="recommend" />
+        <label name="recommanded">Always</label>
+        <br>
+        <input type="radio" value="Most of the time" name="recommend" />
+        <label value="Most of the time">Most of the time</label>
+        <br>
+        <input type="radio" value="About half of the time" name="recommend" />
+        <label value="About half of the time">About half of the time</label>
+        <br>
+        <input type="radio" value="Once in a while" name="recommend" />
+        <label value="Once in a while">Once in a while</label>
+        <br>
+        <input type="radio" value="Never" name="recommend" />
+        <label value="never" >Never</label>
+    <div>
+</fieldset>
+    
+<fieldset style="margin-bottom: 15px;">
+        <legend><b>How important is distance when choosing a vacation destination?</b></legend>
+    <div>
+        <input type="radio" value="Extremely important" name="recommend" />
+        <label value="Extremely Important">Extremely Important</label>
+        <br>
+        <input type="radio" value="Moderately important" name="recommend" />
+        <label value="Moderately Important">Moderately Important</label>
+        <br>
+        <input type="radio" value="Not at all important" name="recommend" />
+        <label value="Not at all important">Not at all important</label>
+    </div>
+</fieldset>
+
+<fieldset style="margin-bottom: 15px;">
+        <legend><b>How important is cost when you choose a vacation destination?</b></legend>
+    <div>
+        <input type="checkbox" id="important" name="important" />
+        <label for="important">Extremely Important</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="moderately" name="moderately" checked />
+        <label for="moderately" >Moderately important</label>
+    </div>
+    
+    <div>
+        <input type="checkbox" id="not at all" name="not at all" />
+        <label for="not at all">Not at all important</label>
+    </div>
+</fieldset>
+
+<div style="margin-bottom: 15px;">
+    <p><b>Join us</b></p>
+    <label for="username">Username:</label>
+    <br>
+    <input type="text" id="username" name="username">
+</div>
+
+<div margin-bottom="15px">
+    <label for="password">Password (8 characters minimum):</label>
+    <br>
+    <input type="text" id="password" name="password" minlength="8" required />
+  <br><br>
+     <input type="submit" value="Sign in">
+</div>
+<br><br>
+<fieldset>
+    <legend>Thank you!</legend>
+    <button type="submit">Submit</button>
+</fieldset>
+    </form>
+    </fieldset>
+</body>
+</html>
